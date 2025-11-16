@@ -1,5 +1,5 @@
 import React from 'react';
-import PlaylistTrack from './PlaylistTrack';
+import PlaylistTrack from '../items/PlaylistTrack';
 
 function Playlist() {
   return (

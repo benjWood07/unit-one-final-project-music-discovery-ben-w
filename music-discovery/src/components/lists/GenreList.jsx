@@ -1,5 +1,5 @@
 import React from 'react';
-import GenreItem from './GenreItem';
+import GenreItem from '../items/GenreItem';
 
 function GenreList() {
   return (

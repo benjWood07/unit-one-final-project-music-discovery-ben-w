@@ -1,5 +1,5 @@
 import React from 'react';
-import TrackList from '../components/TrackList';
+import TrackList from '../lists/TrackList';
 
 const SelectTracksPage = () => {
   return (

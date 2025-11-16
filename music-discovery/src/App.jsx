@@ -1,13 +1,13 @@
 import React from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import HomePage from './pages/HomePage';
-import CreatePlaylistPage from './pages/CreatePlaylistPage';
-import SelectGenrePage from './pages/SelectGenrePage';
-import SelectSourcePage from './pages/SelectSourcePage';
-import SelectTracksPage from './pages/SelectTracksPage';
-import PlaylistPage from './pages/PlaylistPage';
-import AboutPage from './pages/AboutPage';
+import Header from './components/layout/Header';
+import Footer from './components/layout/Footer';
+import HomePage from './components/pages/HomePage';
+import CreatePlaylistPage from './components/pages/CreatePlaylistPage';
+import SelectGenrePage from './components/pages/SelectGenrePage';
+import SelectSourcePage from './components/pages/SelectSourcePage';
+import SelectTracksPage from './components/pages/SelectTracksPage';
+import PlaylistPage from './components/pages/PlaylistPage';
+import AboutPage from './components/pages/AboutPage';
 
 function App() {
   return (
