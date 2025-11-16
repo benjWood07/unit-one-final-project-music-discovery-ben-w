@@ -26,7 +26,7 @@ const Footer = () => {
                 <a href="#youtube">YouTube</a>
                 <a href="#linkedin">LinkedIn</a>
             </div>
-            <div>&copy; {thisYear} IHY</div>
+            <div>&copy; {thisYear} SoundScout</div>
         </footer>
     );
 };

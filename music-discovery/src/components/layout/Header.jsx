@@ -9,7 +9,7 @@ const Header = () => {
         <button>Sign In</button>
         <button>Register</button>
       </div>
-      <strong>IHY</strong> Music Discovery
+      <strong>SoundScout</strong> Music Discovery
       <button>☰</button>
     </header>
     );

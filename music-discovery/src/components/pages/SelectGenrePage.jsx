@@ -1,5 +1,5 @@
 import React from 'react';
-import GenreList from '../components/GenreList';
+import GenreList from '../lists/GenreList';
 
 const SelectGenrePage = () => {
   return (

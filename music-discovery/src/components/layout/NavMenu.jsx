@@ -16,7 +16,7 @@ const NavMenu = () => {
                 Sources
             </Link>
             <Link>
-                IHY Community
+                SoundScout Community
             </Link>
         </div>
     );

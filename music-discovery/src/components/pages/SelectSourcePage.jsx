@@ -1,5 +1,6 @@
 import React from 'react';
-import SourceList from '../components/SourceList';
+import SourceList from '../lists/SourceList';
+import '../styles/SourceList.css';
 
 const SelectSourcePage = () => {
   return (

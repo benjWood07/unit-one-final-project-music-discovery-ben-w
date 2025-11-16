@@ -8,7 +8,7 @@ const AboutPage = () => {
       <section>
         <h3>------</h3>
         <p>
-            IHY is hear to provide an algorithm-free resource for discovering artists
+            SoundScout is hear to provide an algorithm-free resource for discovering artists
             and the new muic they are creating. This means your activity won't be tracked
             and suggested material won't be based on previous selections. No content will
             hidden or visible based on the user's history.
@@ -28,7 +28,7 @@ const AboutPage = () => {
       <section>
         <h3>---------</h3>
         <p>
-            In a world filled with tailored content, IHY, named from the Egyptian god of music,
+            In a world filled with tailored content, SoundScout, named from the Egyptian god of music,
             was created to keep every user's experience uniquly theirs to share. We encourage
             users to branch out from their typical musical preference, while continuing to offer
             new content from genres they already love. After all, life is not about only buuilding

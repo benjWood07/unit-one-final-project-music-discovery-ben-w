@@ -1,0 +1,60 @@
+/* SourceList Component Styles */
+
+.source-list {
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.source-list h3 {
+  color: var(--primary-dark);
+  margin-bottom: 10px;
+}
+
+.source-list > p {
+  color: var(--dark-gray);
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+}
+
+.source-header {
+  display: grid;
+  grid-template-columns: 30px 1fr 1fr;
+  gap: 12px;
+  padding: 12px 15px;
+  background-color: var(--primary-dark);
+  color: var(--white);
+  border-radius: 6px 6px 0 0;
+  font-weight: 600;
+}
+
+.source-header span:first-child {
+  width: 20px;
+}
+
+.source-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 25px;
+}
+
+.source-list-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 2px solid var(--medium-gray);
+}
+
+.source-list-actions a {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.source-list-actions button {
+  padding: 12px 32px;
+}

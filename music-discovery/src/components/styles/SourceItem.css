@@ -1,0 +1,35 @@
+/* SourceItem Component Styles */
+
+.source-item {
+  display: grid;
+  grid-template-columns: 30px 1fr 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 15px;
+  background-color: var(--light-gray);
+  border: 1px solid var(--medium-gray);
+  border-top: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.source-item:last-child {
+  border-radius: 0 0 6px 6px;
+}
+
+.source-item:hover {
+  border-color: var(--accent-cyan);
+  background-color: var(--accent-cyan-light);
+}
+
+.source-item input[type="checkbox"] {
+  margin: 0;
+  width: 20px;
+  cursor: pointer;
+}
+
+.source-name,
+.source-type {
+  font-weight: 500;
+  color: var(--text-dark);
+}

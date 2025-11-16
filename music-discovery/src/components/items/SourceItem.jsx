@@ -1,10 +1,12 @@
 import React from 'react';
+import '../styles/SourceItem.css';
 
 function SourceItem() {
   return (
-    <div>
+    <div className="source-item">
       <input type="checkbox" id="source" />
-      <label htmlFor="source">---------</label>
+      <span className="source-name">---------</span>
+      <span className="source-type">---------</span>
     </div>
   );
 }

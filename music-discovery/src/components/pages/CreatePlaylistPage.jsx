@@ -1,5 +1,5 @@
 import React from 'react';
-import PlaylistForm from '../components/PlaylistForm';
+import PlaylistForm from '../forms/PlaylistForm';
 
 const CreatePlaylistPage = () => {
   return (
