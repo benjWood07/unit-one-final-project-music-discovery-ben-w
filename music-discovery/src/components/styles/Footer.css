@@ -1,0 +1,35 @@
+/* Footer Component Styles */
+
+footer {
+  background-color: #5a93a1;
+  color: #ffffff;
+  padding: 30px 20px;
+}
+
+footer > div:first-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+footer h4 {
+  margin-bottom: 10px;
+}
+
+footer p {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+footer > div:last-child {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  border-top: 1px solid #ffffff;
+  padding-top: 15px;
+}
+
+footer a {
+  color: #ffffff;
+}
