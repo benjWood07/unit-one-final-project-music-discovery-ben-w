@@ -1,0 +1,93 @@
+/*Global Styles*/
+
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333333;
+  background-color: #e1b382;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+/*Links*/
+a {
+  color: #2d545e;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*Buttons*/
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: 2px solid #12343b;
+  background-color: #2d545e;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #12343b;
+}
+
+/*Form*/
+input,
+textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 8px;
+  border: 1px solid #c89666;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/*Tables*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #c89666;
+}
+
+th {
+  background-color: #2d545e;
+  color: #ffffff;
+}
+
+/*Checkboxes*/
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+}

@@ -1,0 +1,35 @@
+/*HomePage Component Styles*/
+
+.home-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.home {
+  background-color: #c89666;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.home h2 {
+  margin-bottom: 10px;
+}
+
+.home p {
+  margin-bottom: 20px;
+}
+
+.home-intro {
+  background-color: #ffffff;
+  padding: 30px;
+  text-align: center;
+}
+
+.home-intro h3 {
+  margin-bottom: 15px;
+}
+
+.home-intro p {
+  margin-bottom: 20px;
+}
