@@ -1,0 +1,16 @@
+/*PlaylistPage Styles*/
+
+.playlist-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.playlist-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.playlist-page > button {
+  display: block;
+  margin: 20px auto;
+}

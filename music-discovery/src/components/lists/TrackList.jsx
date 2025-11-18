@@ -1,5 +1,6 @@
 import React from 'react';
 import TrackItem from '../items/TrackItem';
+import '../styles/TrackList.css'
 
 function TrackList() {
   return (

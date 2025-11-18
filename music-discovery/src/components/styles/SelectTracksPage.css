@@ -1,0 +1,11 @@
+/*SelectTracksPage Styles*/
+
+.select-tracks-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.select-tracks-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}

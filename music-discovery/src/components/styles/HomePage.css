@@ -1,4 +1,4 @@
-/*HomePage Component Styles*/
+/*HomePage Styles*/
 
 .home-page {
   max-width: 800px;
@@ -6,7 +6,7 @@
 }
 
 .home {
-  background-color: #c89666;
+  background-color: #8e8e90;
   padding: 40px;
   text-align: center;
   margin-bottom: 30px;

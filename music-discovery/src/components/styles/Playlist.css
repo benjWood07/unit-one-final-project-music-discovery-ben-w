@@ -1,0 +1,13 @@
+/*Playlist Styles*/
+
+.playlist {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #c89666;
+  margin-bottom: 20px;
+}
+
+.playlist h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}

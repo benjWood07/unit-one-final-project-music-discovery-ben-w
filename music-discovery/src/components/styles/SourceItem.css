@@ -1,0 +1,21 @@
+/*SourceItem Styles*/
+
+.source-item {
+  display: grid;
+  grid-template-columns: 30px 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  background-color: #bd8c7d;
+  border: 1px solid #bd8c7d;
+  border-top: none;
+}
+
+.source-item input[type="checkbox"] {
+  margin: 0;
+}
+
+.source-name,
+.source-type {
+  font-weight: normal;
+}

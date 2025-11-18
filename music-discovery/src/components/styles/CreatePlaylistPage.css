@@ -1,0 +1,11 @@
+/*CreatePlaylistPage Styles*/
+
+.create-playlist-page {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.create-playlist-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
