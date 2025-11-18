@@ -15,7 +15,7 @@ function App() {
     <div>
       <Header />
       <main>
-        <PlaylistPage />
+        <SelectSourcePage />
       </main>
       <Footer />
     </div>

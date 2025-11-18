@@ -1,38 +1,74 @@
 /*Header Styles*/
 
 header {
-  background-color: #49494b;
+  background-color: #2d545e;
   color: #ffffff;
   padding: 20px;
 }
 
 header > div:first-child {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 10px;
   margin-bottom: 15px;
 }
 
 header input[type="text"] {
-  flex: 1;
-  max-width: 400px;
-  margin-right: 10px;
+  width: 100%;
+  margin-right: 0;
 }
 
 header > div:first-child button {
   background-color: #ffffff;
   color: #2d545e;
   border: 2px solid #2d545e;
-  margin-left: 5px;
+  margin-left: 0;
+  width: 100%;
 }
 
 header h1 {
   text-align: center;
   margin: 10px 0;
+  font-size: 1.5rem;
 }
 
 header > button {
   display: block;
   margin: 10px auto 0 auto;
+  background-color: #2d545e;
   color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+@media (min-width: 768px) {
+  header > div:first-child {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header input[type="text"] {
+    flex: 1;
+    max-width: 400px;
+    margin-right: 10px;
+  }
+
+  header > div:first-child button {
+    margin-left: 5px;
+    width: auto;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header {
+    padding: 25px 40px;
+  }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/MediaPlayer.css';
+import './styles/MediaPlayer.css';
 
 function MediaPlayer() {
   return (
