@@ -1,6 +1,8 @@
 import React from 'react';
 import Playlist from '../lists/Playlist';
-//import MediaPlayer from './components/MediaPlayer';
+import '../styles/PlaylistPage.css'
+import MediaPlayer from './components/MediaPlayer.jsx';
+import '../styles/MediaPlayer.css'
 
 const PlaylistPage = () => {
   return (

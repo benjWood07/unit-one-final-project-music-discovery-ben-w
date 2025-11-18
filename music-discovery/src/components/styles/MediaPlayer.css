@@ -1,0 +1,17 @@
+/*MediaPlayer Styles*/
+
+.media-player {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #c89666;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.media-player button {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  font-size: 1.2rem;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
-import PlaylistTrack from '../items/PlaylistTrack';
+import PlaylistTrack from '../PlaylistTrack';
+import '../styles/Playlist.css'
 
 function Playlist() {
   return (

@@ -1,0 +1,27 @@
+/*TrackList Styles*/
+
+.track-list {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #c89666;
+}
+
+.track-list h3 {
+  margin-bottom: 10px;
+}
+
+.track-list > p {
+  margin-bottom: 20px;
+}
+
+.track-list table {
+  margin-bottom: 20px;
+}
+
+.track-list-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  border-top: 1px solid #c89666;
+}
