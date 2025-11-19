@@ -11,10 +11,11 @@ function TrackList() {
       <table>
         <thead>
           <tr>
-            <th>---------</th>
-            <th>------------</th>
-            <th>----------------</th>
-            <th>---------</th>
+            <th>Artist</th>
+            <th>Name</th>
+            <th>Time</th>
+            <th>Album</th>
+            <th>Genre</th>
           </tr>
         </thead>
         <tbody>

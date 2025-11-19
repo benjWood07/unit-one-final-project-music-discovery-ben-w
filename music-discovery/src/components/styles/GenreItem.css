@@ -3,12 +3,26 @@
 .genre-item {
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 8px;
   background-color: #c89666;
   border: 1px solid #c89666;
+  font-size: 0.9rem;
 }
 
 .genre-item label {
   margin: 0;
   flex: 1;
+}
+
+@media (min-width: 768px) {
+  .genre-item {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .genre-item {
+    padding: 12px;
+  }
 }

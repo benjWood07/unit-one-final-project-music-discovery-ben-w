@@ -16,12 +16,46 @@
 
 .track-list table {
   margin-bottom: 20px;
+  font-size: 0.8rem;
+  display: block;
+  overflow-x: auto;
 }
 
 .track-list-actions {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 10px;
   padding-top: 15px;
   border-top: 1px solid #c89666;
+}
+
+.track-list-actions button {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .track-list table {
+    font-size: 0.9rem;
+    display: table;
+  }
+
+  .track-list-actions {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .track-list-actions button {
+    width: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .track-list {
+    padding: 30px;
+  }
+
+  .track-list table {
+    font-size: 1rem;
+  }
 }

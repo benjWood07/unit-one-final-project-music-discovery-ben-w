@@ -11,3 +11,26 @@
   text-align: center;
   margin-bottom: 15px;
 }
+
+.playlist table {
+  font-size: 0.8rem;
+  display: block;
+  overflow-x: auto;
+}
+
+@media (min-width: 768px) {
+  .playlist table {
+    font-size: 0.9rem;
+    display: table;
+  }
+}
+
+@media (min-width: 1024px) {
+  .playlist {
+    padding: 30px;
+  }
+
+  .playlist table {
+    font-size: 1rem;
+  }
+}
