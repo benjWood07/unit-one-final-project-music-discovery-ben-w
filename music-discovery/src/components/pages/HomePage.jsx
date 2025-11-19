@@ -1,18 +1,22 @@
-import { Link } from 'react-router';
+import React from 'react';
 import '../styles/HomePage.css';
 
-const HomePage = () => {
+function HomePage() {
   return (
-    <div>
-      <section>
+    <div className="home-page">
+      <section className="home-hero">
         <h2>SoundScout</h2>
-        <p>Discover Music | Build Playlist | Share</p>
+        <p className="tagline">Discover Music · Build Playlist · Share</p>
         <button>Create Playlist</button>
       </section>
       
-      <section>
+      <section className="home-intro">
         <h3>Introduction</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum, quibusdam, quia, quae voluptates voluptatibus quod quas. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>
+          Welcome to SoundScout, your personal music discovery companion. 
+          Create custom playlists, explore new genres, and share your musical 
+          journey with friends. Get started by creating your first playlist today!
+        </p>
         <button>About Us</button>
       </section>
     </div>

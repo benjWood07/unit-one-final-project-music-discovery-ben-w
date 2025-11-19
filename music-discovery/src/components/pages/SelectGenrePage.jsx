@@ -5,7 +5,7 @@ import '../styles/SelectGenrePage.css';
 const SelectGenrePage = () => {
   return (
     <div>
-      <h2>SoundScout</h2>
+      <h2>SoundScouter</h2>
       <GenreList />
     </div>
   );
