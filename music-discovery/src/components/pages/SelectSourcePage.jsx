@@ -5,7 +5,7 @@ import '../styles/SourceList.css';
 const SelectSourcePage = () => {
   return (
     <div>
-      <h2>SoundScout</h2>
+      <h2>SoundScouter</h2>
       <SourceList />
     </div>
   );

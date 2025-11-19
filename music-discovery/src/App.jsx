@@ -15,7 +15,7 @@ function App() {
     <div>
       <Header />
       <main>
-        <SelectTracksPage />
+        <HomePage />
       </main>
       <Footer />
     </div>

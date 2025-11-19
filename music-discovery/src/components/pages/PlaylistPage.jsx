@@ -7,7 +7,7 @@ import '../styles/MediaPlayer.css';
 const PlaylistPage = () => {
   return (
     <div>
-      <h2>SoundScout</h2>
+      <h2>SoundScouter</h2>
       <Playlist />
       <button>Add Tracks</button>
       <MediaPlayer />

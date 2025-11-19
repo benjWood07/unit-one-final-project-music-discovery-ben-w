@@ -4,7 +4,7 @@ import TrackList from '../lists/TrackList';
 const SelectTracksPage = () => {
   return (
     <div>
-      <h2>SoundScout</h2>
+      <h2>SoundScouter</h2>
       <TrackList />
     </div>
   );
