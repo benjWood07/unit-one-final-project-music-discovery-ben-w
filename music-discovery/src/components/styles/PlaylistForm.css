@@ -1,35 +1,71 @@
 /*PlaylistForm Styles*/
 
 .playlist-form {
-  background-color: #ffffff;
-  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
   border: 1px solid #c89666;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .playlist-form h3 {
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px;
+  font-size: 1.3rem;
+  color: #333333;
+}
+
+.playlist-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333333;
+  font-size: 0.9rem;
 }
 
 .playlist-form input,
 .playlist-form textarea {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #c89666;
+  background-color: #ffffff;
+}
+
+.playlist-form textarea {
+  resize: vertical;
+  min-height: 80px;
 }
 
 .playlist-form button {
   width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #2d545e;
+  color: #ffffff;
+  border: 2px solid #12343b;
+  cursor: pointer;
+}
+
+.playlist-form button:hover {
+  background-color: #12343b;
 }
 
 @media (min-width: 768px) {
   .playlist-form {
-    padding: 30px;
-    max-width: 500px;
-    margin: 0 auto;
+    padding: 35px;
+    max-width: 450px;
+  }
+
+  .playlist-form h3 {
+    font-size: 1.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .playlist-form {
-    max-width: 600px;
+    padding: 40px;
+    max-width: 500px;
   }
 }

@@ -24,8 +24,6 @@ function Header() {
         </div>
       </div>
       
-      <h1>SoundScout</h1>
-      
       <nav className={menuOpen ? 'nav-open' : ''}>
         <a href="#home">Home</a>
         <a href="#create">Create Playlist</a>

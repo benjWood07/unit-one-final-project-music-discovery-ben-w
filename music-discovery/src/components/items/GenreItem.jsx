@@ -3,7 +3,7 @@ import '../styles/GenreItem.css'
 
 function GenreItem() {
   return (
-    <div>
+    <div className="genre-item">
       <input type="checkbox" id="genre" />
       <label htmlFor="genre">----------</label>
     </div>

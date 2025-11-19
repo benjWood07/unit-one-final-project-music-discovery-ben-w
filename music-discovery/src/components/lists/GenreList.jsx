@@ -4,20 +4,22 @@ import '../styles/GenreList.css'
 
 function GenreList() {
   return (
-    <div>
+    <div className="genre-list">
       <h3>Genres</h3>
       <p>Select one or multiple genres</p>
       
-      <GenreItem />
-      <GenreItem />
-      <GenreItem />
-      <GenreItem />
-      <GenreItem />
-      <GenreItem />
-      <GenreItem />
-      <GenreItem />
+      <div className="genre-items">
+        <GenreItem />
+        <GenreItem />
+        <GenreItem />
+        <GenreItem />
+        <GenreItem />
+        <GenreItem />
+        <GenreItem />
+        <GenreItem />
+      </div>
       
-      <div>
+      <div className="genre-list-actions">
         <a href="#back">Back</a>
         <button>Submit</button>
       </div>

@@ -1,11 +1,10 @@
-import { Link } from 'react-router';
+import React from 'react';
 import PlaylistForm from '../forms/PlaylistForm';
 import '../styles/CreatePlaylistPage.css';
 
-const CreatePlaylistPage = () => {
+function CreatePlaylistPage() {
   return (
-    <div>
-      <h2>SoundScouter</h2>
+    <div className="create-playlist-page">
       <PlaylistForm />
     </div>
   );

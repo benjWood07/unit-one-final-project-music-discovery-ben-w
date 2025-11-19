@@ -2,33 +2,22 @@
 
 .create-playlist-page {
   max-width: 100%;
-  padding: 0 15px;
+  padding: 40px 15px;
   margin: 0 auto;
-}
-
-.create-playlist-page h2 {
-  text-align: center;
-  margin-bottom: 15px;
-  font-size: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: calc(100vh - 300px);
 }
 
 @media (min-width: 768px) {
   .create-playlist-page {
-    max-width: 600px;
-  }
-
-  .create-playlist-page h2 {
-    margin-bottom: 20px;
-    font-size: 1.8rem;
+    padding: 60px 40px;
   }
 }
 
 @media (min-width: 1024px) {
   .create-playlist-page {
-    max-width: 700px;
-  }
-
-  .create-playlist-page h2 {
-    font-size: 2rem;
+    padding: 80px 60px;
   }
 }
