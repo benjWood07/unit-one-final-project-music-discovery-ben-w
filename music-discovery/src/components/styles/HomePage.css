@@ -4,6 +4,9 @@
   width: 100%;
   padding: 0;
   margin: 0;
+  min-height: calc(100vh - 400px);
+  display: flex;
+  flex-direction: column;
 }
 
 .home-hero {
@@ -77,8 +80,11 @@
   background-color: #b5855a;
 }
 
-/* TABLET - 768px and up */
 @media (min-width: 768px) {
+  .home-page {
+    min-height: calc(100vh - 350px);
+  }
+
   .home-hero {
     padding: 80px 40px;
   }
@@ -113,8 +119,11 @@
   }
 }
 
-/* DESKTOP - 1024px and up */
 @media (min-width: 1024px) {
+  .home-page {
+    min-height: calc(100vh - 300px);
+  }
+
   .home-hero {
     padding: 100px 50px;
   }

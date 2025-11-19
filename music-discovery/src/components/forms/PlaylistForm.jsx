@@ -3,23 +3,22 @@ import '../styles/PlaylistForm.css';
 
 function PlaylistForm() {
   return (
-    <form>
+    <form className="playlist-form">
       <h3>Create Playlist</h3>
       
-      <label htmlFor="playlistName">Playlist Name</label>
+      <label htmlFor="playlist-name">Playlist Name</label>
       <input 
         type="text" 
-        id="playlistName" 
-        name="playlistName"
-        placeholder="Enter playlist name"
+        id="playlist-name" 
+        name="playlist-name" 
+        placeholder="Name"
       />
       
       <label htmlFor="description">Description</label>
       <textarea 
         id="description" 
-        name="description"
-        placeholder="Enter description (optional)"
-        rows="4"
+        name="description" 
+        placeholder="Optional..."
       />
       
       <button type="submit">Create</button>
