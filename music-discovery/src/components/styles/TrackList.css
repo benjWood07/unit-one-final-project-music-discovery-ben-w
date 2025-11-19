@@ -16,9 +16,16 @@
 
 .track-list table {
   margin-bottom: 20px;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
+  width: 100%;
   display: block;
   overflow-x: auto;
+}
+
+.track-list th,
+.track-list td {
+  padding: 8px 5px;
+  white-space: nowrap;
 }
 
 .track-list-actions {
@@ -27,6 +34,10 @@
   gap: 10px;
   padding-top: 15px;
   border-top: 1px solid #c89666;
+}
+
+.track-list-actions a {
+  text-align: center;
 }
 
 .track-list-actions button {
@@ -39,6 +50,11 @@
     display: table;
   }
 
+  .track-list th,
+  .track-list td {
+    padding: 10px;
+  }
+
   .track-list-actions {
     flex-direction: row;
     justify-content: space-between;
@@ -47,6 +63,7 @@
 
   .track-list-actions button {
     width: auto;
+    padding: 10px 30px;
   }
 }
 

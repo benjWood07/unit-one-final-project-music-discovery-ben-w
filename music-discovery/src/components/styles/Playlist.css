@@ -13,9 +13,16 @@
 }
 
 .playlist table {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
+  width: 100%;
   display: block;
   overflow-x: auto;
+}
+
+.playlist th,
+.playlist td {
+  padding: 8px 5px;
+  white-space: nowrap;
 }
 
 @media (min-width: 768px) {
@@ -24,6 +31,11 @@
     display: table;
   }
 }
+
+  .playlist th,
+  .playlist td {
+    padding: 10px;
+  }
 
 @media (min-width: 1024px) {
   .playlist {
