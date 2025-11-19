@@ -17,11 +17,12 @@
 .source-header {
   display: grid;
   grid-template-columns: 30px 1fr 1fr;
-  gap: 10px;
-  padding: 10px;
-  background-color: #beac94;
+  gap: 5px;
+  padding: 10px 5px;
+  background-color: #2d545e;
   color: #ffffff;
   font-weight: bold;
+  font-size: 0.8rem;
 }
 
 .source-items {
@@ -30,8 +31,40 @@
 
 .source-list-actions {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 10px;
   padding-top: 15px;
   border-top: 1px solid #c89666;
+}
+
+.source-list-actions button {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .source-header {
+    gap: 10px;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .source-list-actions {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .source-list-actions button {
+    width: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .source-list {
+    padding: 30px;
+  }
+
+  .source-header {
+    font-size: 1rem;
+  }
 }

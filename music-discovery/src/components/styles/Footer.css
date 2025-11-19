@@ -1,14 +1,14 @@
 /*Footer Styles*/
 
 footer {
-  background-color:  #c2b490;
+  background-color: #2d545e;
   color: #ffffff;
   padding: 30px 20px;
 }
 
 footer > div:first-child {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 20px;
   margin-bottom: 20px;
 }
@@ -24,6 +24,7 @@ footer p {
 
 footer > div:last-child {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
   border-top: 1px solid #ffffff;
@@ -32,4 +33,24 @@ footer > div:last-child {
 
 footer a {
   color: #ffffff;
+}
+
+
+@media (min-width: 768px) {
+  footer > div:first-child {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer > div:first-child {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
+  }
+
+  footer > div:last-child {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
