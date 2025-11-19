@@ -6,7 +6,8 @@
   border: 1px solid #c89666;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .media-player button {

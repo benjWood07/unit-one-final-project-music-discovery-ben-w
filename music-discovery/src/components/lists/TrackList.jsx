@@ -11,6 +11,7 @@ function TrackList() {
       <table>
         <thead>
           <tr>
+            <th></th>
             <th>Artist</th>
             <th>Name</th>
             <th>Time</th>
@@ -19,6 +20,8 @@ function TrackList() {
           </tr>
         </thead>
         <tbody>
+          <TrackItem />
+          <TrackItem />
           <TrackItem />
           <TrackItem />
           <TrackItem />

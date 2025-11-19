@@ -46,6 +46,7 @@
 
   .genre-list-actions button {
     width: auto;
+    padding: 10px 30px;
   }
 }
 
