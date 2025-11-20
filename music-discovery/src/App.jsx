@@ -15,7 +15,7 @@ function App() {
     <div>
       <Header />
       <main>
-        <SelectGenrePage />
+        <AboutPage />
       </main>
       <Footer />
     </div>
