@@ -1,10 +1,10 @@
 import React from 'react';
 import TrackList from '../lists/TrackList';
+import '../styles/SelectTracksPage.css';
 
-const SelectTracksPage = () => {
+function SelectTracksPage() {
   return (
-    <div>
-      <h2>SoundScouter</h2>
+    <div className="select-tracks-page">
       <TrackList />
     </div>
   );

@@ -23,12 +23,16 @@ function Header() {
           <button>Sign Up</button>
         </div>
       </div>
-      
-      <nav className={menuOpen ? 'nav-open' : ''}>
-        <a href="#home">Home</a>
-        <a href="#create">Create Playlist</a>
-        <a href="#about">About</a>
-      </nav>
+
+      <div className="header-bottom">
+        <h1>SoundScouter</h1>
+        
+        <nav className={menuOpen ? 'nav-open' : ''}>
+          <a href="#home">Home</a>
+          <a href="#create">Create Playlist</a>
+          <a href="#about">About</a>
+        </nav>
+      </div>
     </header>
   );
 }

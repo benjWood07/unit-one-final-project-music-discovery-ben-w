@@ -4,12 +4,10 @@ import '../styles/PlaylistPage.css';
 import MediaPlayer from '../MediaPlayer';
 import '../styles/MediaPlayer.css';
 
-const PlaylistPage = () => {
+function PlaylistPage() {
   return (
-    <div>
-      <h2>SoundScouter</h2>
+    <div className="playlist-page">
       <Playlist />
-      <button>Add Tracks</button>
       <MediaPlayer />
     </div>
   );

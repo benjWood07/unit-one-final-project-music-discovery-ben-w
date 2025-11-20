@@ -54,10 +54,17 @@ header .auth-buttons button {
   flex-shrink: 0;
 }
 
+.header-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 header h1 {
   text-align: center;
   margin: 10px 0;
   font-size: 1.5rem;
+  color: #ffffff;
 }
 
 nav {
@@ -69,6 +76,7 @@ nav {
   border-top: 1px solid #ffffff;
   overflow: hidden;
   transition: max-height 0.3s ease;
+  width: 100%;
 }
 
 nav.nav-open {
@@ -116,8 +124,17 @@ nav a:hover {
     font-size: 1rem;
   }
 
+  .header-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   header h1 {
     font-size: 1.8rem;
+    color: #ffffff;
+    margin: 0;
+    text-align: left;
   }
 
   .hamburger-menu {
@@ -127,11 +144,13 @@ nav a:hover {
   nav {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 30px;
     border-top: none;
     padding-top: 0;
     transition: none;
+    margin-top: 0;
+    width: auto;
   }
 
   nav a {
@@ -151,6 +170,7 @@ nav a:hover {
 @media (min-width: 1024px) {
   header h1 {
     font-size: 2rem;
+    color: #ffffff;
   }
 
   header {

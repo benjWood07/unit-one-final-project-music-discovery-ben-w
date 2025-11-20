@@ -1,11 +1,11 @@
 import React from 'react';
 import SourceList from '../lists/SourceList';
 import '../styles/SourceList.css';
+import '../styles/SelectSourcePage.css';
 
-const SelectSourcePage = () => {
+function SelectSourcePage() {
   return (
-    <div>
-      <h2>SoundScouter</h2>
+    <div className="select-source-page">
       <SourceList />
     </div>
   );

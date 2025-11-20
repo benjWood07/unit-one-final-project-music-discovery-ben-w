@@ -5,7 +5,7 @@ import '../styles/SourceList.css';
 function SourceList() {
   return (
     <div className="source-list">
-      <h3>Sources</h3>
+      <h3>Music Source</h3>
       <p>Select one or multiple sources</p>
       
       <div className="source-header">

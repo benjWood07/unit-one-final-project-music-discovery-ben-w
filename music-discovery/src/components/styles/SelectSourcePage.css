@@ -1,34 +1,29 @@
 /*SelectSourcePage Styles*/
 
 .select-source-page {
-  max-width: 100%;
-  padding: 0 15px;
+  width: 100%;
+  padding: 40px 15px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: calc(100vh - 400px);
 }
 
-.select-source-page h2 {
-  text-align: center;
-  margin-bottom: 15px;
-  font-size: 1.5rem;
+.select-source-page > * {
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
   .select-source-page {
-    max-width: 700px;
-  }
-
-  .select-source-page h2 {
-    margin-bottom: 20px;
-    font-size: 1.8rem;
+    padding: 60px 20px;
+    min-height: calc(100vh - 350px);
   }
 }
 
 @media (min-width: 1024px) {
   .select-source-page {
-    max-width: 900px;
-  }
-
-  .select-source-page h2 {
-    font-size: 2rem;
+    padding: 80px 40px;
+    min-height: calc(100vh - 300px);
   }
 }
