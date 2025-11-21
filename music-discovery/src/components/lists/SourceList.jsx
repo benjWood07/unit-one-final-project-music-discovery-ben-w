@@ -2,7 +2,16 @@ import React from 'react';
 import SourceItem from '../items/SourceItem';
 import '../styles/SourceList.css';
 
-function SourceList() {
+function SourceList({ sources, selectedSources, setSelectedSources, handleSubmit, handleBack }) {
+  
+  const toggleSource = (sourceId) => {
+    if (selectedSources.includes(sourceId)) {
+      setSelectedSources(selectedSources.filter(id => id !== sourceId));
+    } else {
+      setSelectedSources([...selectedSources, sourceId]);
+    }
+  };
+
   return (
     <div className="source-list">
       <h3>Music Source</h3>
@@ -15,20 +24,19 @@ function SourceList() {
       </div>
       
       <div className="source-items">
-        <SourceItem />
-        <SourceItem />
-        <SourceItem />
-        <SourceItem />
-        <SourceItem />
-        <SourceItem />
-        <SourceItem />
-        <SourceItem />
-        <SourceItem />
+        {sources.map((source) => (
+          <SourceItem 
+            key={source.id}
+            source={source}
+            isSelected={selectedSources.includes(source.id)}
+            toggleSource={toggleSource}
+          />
+        ))}
       </div>
       
       <div className="source-list-actions">
-        <a href="#back">Back</a>
-        <button>Submit</button>
+        <a href="#" onClick={(e) => { e.preventDefault(); handleBack(); }}>Back</a>
+        <button onClick={handleSubmit}>Submit</button>
       </div>
     </div>
   );

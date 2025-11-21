@@ -22,6 +22,10 @@ function App() {
   const [selectedSources, setSelectedSources] = useState([]);
   const [selectedTracks, setSelectedTracks] = useState([]);
 
+  const selectedTrackObjects = mockTracks.filter(track => 
+    selectedTracks.includes(track.id)
+  );
+
   return (
     <Router>
       <div className="app">
@@ -75,7 +79,7 @@ function App() {
               element={
                 <PlaylistPage 
                   playlistName={playlistName}
-                  selectedTracks={selectedTracks}
+                  selectedTracks={selectedTrackObjects}
                 />
               } 
             />

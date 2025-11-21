@@ -1,13 +1,15 @@
 import React from 'react';
 import Playlist from '../lists/Playlist';
-import '../styles/PlaylistPage.css';
 import MediaPlayer from '../MediaPlayer';
-import '../styles/MediaPlayer.css';
+import '../styles/PlaylistPage.css';
 
-function PlaylistPage() {
+function PlaylistPage({ playlistName, selectedTracks }) {
   return (
     <div className="playlist-page">
-      <Playlist />
+      <Playlist 
+        playlistName={playlistName}
+        selectedTracks={selectedTracks}
+      />
       <MediaPlayer />
     </div>
   );

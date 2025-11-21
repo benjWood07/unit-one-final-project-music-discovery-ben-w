@@ -1,8 +1,16 @@
 import React from 'react';
-import TrackItem from '../items/TrackItem';
-import '../styles/TrackList.css'
+import '../styles/TrackList.css';
 
-function TrackList() {
+function TrackList({ tracks, selectedTracks, setSelectedTracks, handleSubmit, handleBack }) {
+  
+  const toggleTrack = (trackId) => {
+    if (selectedTracks.includes(trackId)) {
+      setSelectedTracks(selectedTracks.filter(id => id !== trackId));
+    } else {
+      setSelectedTracks([...selectedTracks, trackId]);
+    }
+  };
+
   return (
     <div className="track-list">
       <h3>Select Tracks</h3>
@@ -21,93 +29,30 @@ function TrackList() {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td><input type="checkbox" /></td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" /></td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" /></td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" /></td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" /></td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" /></td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" /></td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" /></td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" /></td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" /></td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-            </tr>
+            {tracks.map((track) => (
+              <tr key={track.id}>
+                <td>
+                  <input 
+                    type="checkbox"
+                    id={`track-${track.id}`}
+                    checked={selectedTracks.includes(track.id)}
+                    onChange={() => toggleTrack(track.id)}
+                  />
+                </td>
+                <td>{track.artist}</td>
+                <td>{track.name}</td>
+                <td>{track.time}</td>
+                <td>{track.album}</td>
+                <td>{track.genre}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
       
       <div className="track-list-actions">
-        <a href="#back">Back</a>
-        <button>Add Tracks</button>
+        <a href="#" onClick={(e) => { e.preventDefault(); handleBack(); }}>Back</a>
+        <button onClick={handleSubmit}>Add Tracks</button>
       </div>
     </div>
   );
