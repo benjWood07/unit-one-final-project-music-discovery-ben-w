@@ -1,97 +1,44 @@
 import React from 'react';
-import PlaylistTrack from '../PlaylistTrack';
-import '../styles/Playlist.css'
+import '../styles/Playlist.css';
 
-function Playlist() {
+function Playlist({ playlistName, selectedTracks }) {
   return (
     <div className="playlist">
-      <h3>Playlist Name</h3>
+      <h3>{playlistName || 'My Playlist'}</h3>
       
       <div className="playlist-container">
         <table>
           <thead>
             <tr>
-              <th></th>
-              <th>Artist</th>
+              <th></th>             
               <th>Name</th>
+              <th>Artist</th>
               <th>Time</th>
               <th>Album</th>
               <th>Genre</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td><input type="checkbox" /></td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" /></td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" /></td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" /></td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" /></td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" /></td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" /></td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" /></td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" /></td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-              <td>----------</td>
-            </tr>
+            {selectedTracks.length > 0 ? (
+              selectedTracks.map((track) => (
+                <tr key={track.id}>
+                  <td>
+                    <input type="checkbox" />
+                  </td>
+                  <td>{track.name}</td>
+                  <td>{track.artist}</td>
+                  <td>{track.time}</td>
+                  <td>{track.album}</td>
+                  <td>{track.genre}</td>
+                </tr>
+              ))
+            ) : (
+              <tr>
+                <td colSpan="6" style={{ textAlign: 'center', padding: '20px' }}>
+                  No tracks selected
+                </td>
+              </tr>
+            )}
           </tbody>
         </table>
       </div>
