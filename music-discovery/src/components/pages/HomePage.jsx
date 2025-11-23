@@ -8,7 +8,7 @@ function HomePage() {
   return (
     <div className="home-page">
       <section className="home-hero">
-        <h2>SoundScout</h2>
+        <h2>SongScout</h2>
         <p className="tagline">Discover Music · Build Playlist · Share</p>
         <button onClick={() => navigate('/create-playlist')}>Create Playlist</button>
       </section>

@@ -2,7 +2,7 @@ import React from 'react';
 import GenreItem from '../items/GenreItem';
 import '../styles/GenreList.css';
 
-function GenreList({ genres, selectedGenres, setSelectedGenres, handleSubmit, handleBack }) {
+function GenreList({ genres, selectedGenres, setSelectedGenres, handleSubmit, handleBack, error }) {
   
   const toggleGenre = (genre) => {
     if (selectedGenres.includes(genre)) {
@@ -32,6 +32,8 @@ function GenreList({ genres, selectedGenres, setSelectedGenres, handleSubmit, ha
         <a href="#" onClick={(e) => { e.preventDefault(); handleBack(); }}>Back</a>
         <button onClick={handleSubmit}>Submit</button>
       </div>
+      
+      {error && <p className="error-message">{error}</p>}
     </div>
   );
 }

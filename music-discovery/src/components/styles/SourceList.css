@@ -1,9 +1,11 @@
 /*SourceList Styles*/
 
 .source-list {
-  background-color: #ffffff;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
   padding: 25px;
-  border: 1px solid #c89666;
+  border: 3px solid #cc883bbd;
+  border-radius: 8px;
   max-width: 600px;
   width: 100%;
 }
@@ -17,7 +19,7 @@
 .source-list > p {
   margin-bottom: 15px;
   font-size: 0.85rem;
-  color: #666666;
+  color: #252525;
 }
 
 .source-header {
@@ -25,12 +27,20 @@
   grid-template-columns: 30px 1fr 1fr;
   gap: 10px;
   padding: 10px 12px;
-  background-color: #2d545e;
-  color: #ffffff;
+  background-color: #696969;
+  color: #222121;
   font-weight: bold;
   font-size: 0.85rem;
-  border: 1px solid #c89666;
+  border: 2px solid #c7c6c6;
   border-bottom: none;
+  border-radius: 6px 6px 0 0;
+}
+
+.source-header input[type="checkbox"] {
+  accent-color: #8a48227c;
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
 }
 
 .source-header span:first-child {
@@ -42,8 +52,9 @@
   flex-direction: column;
   gap: 0;
   margin-bottom: 15px;
-  border: 1px solid #c89666;
-  background-color: #f5f5f5;
+  border: 2px solid #c7c6c6;
+  border-radius: 0 0 6px 6px;
+  background-color: transparent;
 }
 
 .source-list-actions {
@@ -57,7 +68,7 @@
 }
 
 .source-list-actions a {
-  color: #2d545e;
+  color: #1c1e1f;
   font-weight: normal;
   font-size: 0.9rem;
   order: 2;
@@ -65,17 +76,30 @@
 
 .source-list-actions button {
   padding: 10px 30px;
-  background-color: #2d545e;
+  background-color: #d3853d81;
   color: #ffffff;
-  border: 2px solid #12343b;
+  border: 2px solid #7e53218e;
+  border-radius: 6px;
   font-size: 0.95rem;
   cursor: pointer;
   order: 1;
 }
 
 .source-list-actions button:hover {
-  background-color: #12343b;
+  background-color: #c2a3619f;
 }
+
+.error-message {
+  color: #d3853d81;
+  background-color: #ffebee;
+  padding: 10px;
+  margin-top: 15px;
+  border: 1px solid #7e53218e;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
 
 @media (min-width: 768px) {
   .source-list {

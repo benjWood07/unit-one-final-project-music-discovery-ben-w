@@ -1,9 +1,11 @@
 /*PlaylistForm Styles*/
 
 .playlist-form {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: transparent;
+  backdrop-filter: blur(4px);
   padding: 30px;
   border: 1px solid #c89666;
+  border-radius: 8px;
   max-width: 400px;
   width: 100%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -13,7 +15,7 @@
   text-align: left;
   margin-bottom: 20px;
   font-size: 1.3rem;
-  color: #333333;
+  color: #1f1f1f;
 }
 
 .playlist-form label {
@@ -24,32 +26,42 @@
   font-size: 0.9rem;
 }
 
-.playlist-form input,
+.playlist-form input[type="text"],
 .playlist-form textarea {
   margin-bottom: 20px;
   padding: 10px;
   font-size: 1rem;
-  border: 1px solid #c89666;
-  background-color: #ffffff;
+  border: 1px solid #c7c6c6;
+  background-color: transparent;
+  border-radius: 4px;
+  color: #f7f4f4
+}
+
+.playlist-form input[type="text"]::placeholder,
+.playlist-form textarea::placeholder {
+  color: #e7e6e6;
+  opacity: 0.7;
 }
 
 .playlist-form textarea {
   resize: vertical;
   min-height: 80px;
+  border-radius: 4px;
 }
 
 .playlist-form button {
   width: 100%;
   padding: 12px;
   font-size: 1rem;
-  background-color: #2d545e;
-  color: #ffffff;
-  border: 2px solid #12343b;
+  background-color: #d3853d81;
+  color: #e9e9e9;
+  border: 2px solid #7e53218e;
   cursor: pointer;
+  border-radius: 6px;
 }
 
 .playlist-form button:hover {
-  background-color: #12343b;
+  background-color: #c2a3619f;
 }
 
 @media (min-width: 768px) {

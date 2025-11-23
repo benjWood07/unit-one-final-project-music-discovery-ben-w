@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/TrackList.css';
 
-function TrackList({ tracks, selectedTracks, setSelectedTracks, handleSubmit, handleBack }) {
+function TrackList({ tracks, selectedTracks, setSelectedTracks, handleSubmit, handleBack, error }) {
   
   const toggleTrack = (trackId) => {
     if (selectedTracks.includes(trackId)) {
@@ -10,6 +10,17 @@ function TrackList({ tracks, selectedTracks, setSelectedTracks, handleSubmit, ha
       setSelectedTracks([...selectedTracks, trackId]);
     }
   };
+
+  const toggleAll = () => {
+    if (selectedTracks.length === tracks.length) {
+      setSelectedTracks([]);
+    } else {
+      const allTrackIds = tracks.map(track => track.id);
+      setSelectedTracks(allTrackIds);
+    }
+  };
+
+  const allSelected = tracks.length > 0 && selectedTracks.length === tracks.length;
 
   return (
     <div className="track-list">
@@ -20,9 +31,16 @@ function TrackList({ tracks, selectedTracks, setSelectedTracks, handleSubmit, ha
         <table>
           <thead>
             <tr>
-              <th></th>
+              <th>
+                <input 
+                  type="checkbox"
+                  checked={allSelected}
+                  onChange={toggleAll}
+                  title="Select All"
+                />
+              </th>
+              <th>Title</th>
               <th>Artist</th>
-              <th>Name</th>
               <th>Time</th>
               <th>Album</th>
               <th>Genre</th>
@@ -39,8 +57,8 @@ function TrackList({ tracks, selectedTracks, setSelectedTracks, handleSubmit, ha
                     onChange={() => toggleTrack(track.id)}
                   />
                 </td>
+                <td>{track.title}</td>
                 <td>{track.artist}</td>
-                <td>{track.name}</td>
                 <td>{track.time}</td>
                 <td>{track.album}</td>
                 <td>{track.genre}</td>
@@ -54,6 +72,8 @@ function TrackList({ tracks, selectedTracks, setSelectedTracks, handleSubmit, ha
         <a href="#" onClick={(e) => { e.preventDefault(); handleBack(); }}>Back</a>
         <button onClick={handleSubmit}>Add Tracks</button>
       </div>
+      
+      {error && <p className="error-message">{error}</p>}
     </div>
   );
 }

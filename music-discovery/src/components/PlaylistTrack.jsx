@@ -5,8 +5,8 @@ function PlaylistTrack() {
     <tr>
       <td><input type="checkbox" /></td>
       <td>---------</td>
-      <td>------------</td>
-      <td>----------------</td>
+      <td>---------</td>
+      <td>---------</td>
       <td>---------</td>
     </tr>
   );

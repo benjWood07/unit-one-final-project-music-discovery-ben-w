@@ -3,7 +3,7 @@ import '../styles/PlaylistForm.css';
 
 function PlaylistForm({ playlistName, setPlaylistName, playlistDescription, setPlaylistDescription, handleSubmit }) {
   return (
-    <form className="playlist-form" onSubmit={handleSubmit}>
+    <form className="playlist-form" onSubmit={handleSubmit} autoComplete="off">
       <h3>Create Playlist</h3>
       
       <label htmlFor="playlist-name">Playlist Name</label>
