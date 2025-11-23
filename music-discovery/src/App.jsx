@@ -22,7 +22,11 @@ function App() {
   const [selectedSources, setSelectedSources] = useState([]);
   const [selectedTracks, setSelectedTracks] = useState([]);
 
-  const selectedTrackObjects = mockTracks.filter(track => 
+  const filteredTracks = selectedGenres.length > 0 
+    ? mockTracks.filter(track => selectedGenres.includes(track.genre))
+    : mockTracks;
+
+  const selectedTrackObjects = filteredTracks.filter(track => 
     selectedTracks.includes(track.id)
   );
 
@@ -68,7 +72,7 @@ function App() {
               path="/select-tracks" 
               element={
                 <SelectTracksPage 
-                  tracks={mockTracks}
+                  tracks={filteredTracks}
                   selectedTracks={selectedTracks}
                   setSelectedTracks={setSelectedTracks}
                 />

@@ -1,8 +1,9 @@
 /*Header Styles*/
 
 header {
-  background-color: #2d545e;
-  color: #ffffff;
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  color: #f1eaea;
   padding: 20px;
 }
 
@@ -25,6 +26,7 @@ header > div:first-child {
 header input[type="text"] {
   flex: 1;
   padding: 8px;
+  border-radius: 4px;
 }
 
 .auth-buttons {
@@ -35,9 +37,10 @@ header input[type="text"] {
 }
 
 header .auth-buttons button {
-  background-color: #ffffff;
-  color: #2d545e;
-  border: 2px solid #2d545e;
+  background-color: #d3853d81;
+  color: #edf3f3;
+  border: 2px solid #7e53218e;
+  border-radius: 6px;
   padding: 6px 12px;
   font-size: 0.85rem;
   white-space: nowrap;
@@ -46,8 +49,9 @@ header .auth-buttons button {
 .hamburger-menu {
   display: block;
   background-color: transparent;
-  border: 2px solid #ffffff;
-  color: #ffffff;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: #9e5c1fa1;
   font-size: 1.5rem;
   padding: 5px 10px;
   cursor: pointer;
@@ -64,7 +68,7 @@ header h1 {
   text-align: center;
   margin: 10px 0;
   font-size: 1.5rem;
-  color: #ffffff;
+  color: #313030;
 }
 
 nav {
@@ -73,7 +77,7 @@ nav {
   gap: 10px;
   margin-top: 15px;
   padding-top: 15px;
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid #4b4747;
   overflow: hidden;
   transition: max-height 0.3s ease;
   width: 100%;
@@ -84,18 +88,18 @@ nav.nav-open {
 }
 
 nav a {
-  color: #ffffff;
+  color: #3a3939;
   text-decoration: none;
   padding: 10px;
   text-align: center;
-  background-color: #12343b;
+  background-color: #a5bec4;
   border-radius: 4px;
   font-weight: bold;
   font-size: 1rem;
 }
 
 nav a:hover {
-  background-color: #1a4a57;
+  background-color: #9c882f;
   text-decoration: none;
 }
 
@@ -169,8 +173,8 @@ nav a:hover {
 
 @media (min-width: 1024px) {
   header h1 {
-    font-size: 2rem;
-    color: #ffffff;
+    font-size: 3rem;
+    color: #f3eeee;
   }
 
   header {

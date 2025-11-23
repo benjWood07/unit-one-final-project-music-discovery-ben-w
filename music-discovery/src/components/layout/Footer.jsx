@@ -28,7 +28,7 @@ function Footer() {
           <a href="#youtube">YouTube</a>
           <a href="#linkedin">LinkedIn</a>
         </div>
-        <p className="copyright">© 2025 SoundScouter</p>
+        <p className="copyright">© 2025 SongScout</p>
       </div>
     </footer>
   );
