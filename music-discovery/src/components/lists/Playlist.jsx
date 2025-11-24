@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Playlist.css';
 
-function Playlist({ playlistName, selectedTracks }) {
+function Playlist({ playlistName, playlistDescription, selectedTracks }) {
   const [checkedTracks, setCheckedTracks] = useState([]);
 
   useEffect(() => {
@@ -31,6 +31,9 @@ function Playlist({ playlistName, selectedTracks }) {
   return (
     <div className="playlist">
       <h3>{playlistName || 'My Playlist'}</h3>
+      {playlistDescription && (
+        <p className="playlist-description">{playlistDescription}</p>
+      )}
       
       <div className="playlist-container">
         <table>

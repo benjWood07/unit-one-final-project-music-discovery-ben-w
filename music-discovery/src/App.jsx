@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/layout/Header';
@@ -22,19 +22,45 @@ function App() {
   const [selectedSources, setSelectedSources] = useState([]);
   const [selectedTracks, setSelectedTracks] = useState([]);
 
+  const prevGenresRef = useRef([]);
+
   const filteredSources = selectedGenres.length > 0
     ? mockSources.filter(source => 
         source.genres.some(genre => selectedGenres.includes(genre))
       )
     : mockSources;
 
-  const filteredTracks = selectedGenres.length > 0 
-    ? mockTracks.filter(track => selectedGenres.includes(track.genre))
-    : mockTracks;
+  const filteredTracks = React.useMemo(() => {
+    let tracks = mockTracks;
+    
+    if (selectedGenres.length > 0) {
+      tracks = tracks.filter(track => 
+        track.genre && selectedGenres.includes(track.genre)
+      );
+    }
+    
+    if (selectedSources.length > 0) {
+      tracks = tracks.filter(track => 
+        track.sourceId && selectedSources.includes(track.sourceId)
+      );
+    }
+    
+    return tracks;
+  }, [selectedGenres, selectedSources]);
 
   const selectedTrackObjects = filteredTracks.filter(track => 
     selectedTracks.includes(track.id)
   );
+
+  useEffect(() => {
+    const genresChanged = JSON.stringify(prevGenresRef.current) !== JSON.stringify(selectedGenres);
+    
+    if (genresChanged && prevGenresRef.current.length > 0) {
+      setSelectedSources([]);
+    }
+    
+    prevGenresRef.current = selectedGenres;
+  }, [selectedGenres]);
 
   return (
     <Router>
@@ -89,6 +115,7 @@ function App() {
               element={
                 <PlaylistPage 
                   playlistName={playlistName}
+                  playlistDescription={playlistDescription}
                   selectedTracks={selectedTrackObjects}
                 />
               } 
