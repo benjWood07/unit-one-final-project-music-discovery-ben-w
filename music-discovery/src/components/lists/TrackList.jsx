@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/TrackList.css';
+import BackButton from '../common/BackButton';
 
 function TrackList({ tracks, selectedTracks, setSelectedTracks, handleSubmit, handleBack, error }) {
   
@@ -69,7 +70,7 @@ function TrackList({ tracks, selectedTracks, setSelectedTracks, handleSubmit, ha
       </div>
       
       <div className="track-list-actions">
-        <a href="#" onClick={(e) => { e.preventDefault(); handleBack(); }}>Back</a>
+        <BackButton onClick={handleBack} />
         <button onClick={handleSubmit}>Add Tracks</button>
       </div>
       

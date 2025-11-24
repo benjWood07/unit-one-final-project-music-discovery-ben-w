@@ -1,4 +1,3 @@
-/*
 import React, { useState } from 'react';
 import './styles/MediaPlayer.css';
 
@@ -31,4 +30,3 @@ function MediaPlayer() {
 }
 
 export default MediaPlayer;
-*/

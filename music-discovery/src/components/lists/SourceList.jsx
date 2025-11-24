@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import SourceItem from '../items/SourceItem';
+import BackButton from '../common/BackButton';
 import '../styles/SourceList.css';
 
 function SourceList({ sources, selectedSources, setSelectedSources, handleSubmit, handleBack, error }) {
@@ -63,7 +64,7 @@ function SourceList({ sources, selectedSources, setSelectedSources, handleSubmit
       </div>
       
       <div className="source-list-actions">
-        <a href="#" onClick={(e) => { e.preventDefault(); handleBack(); }}>Back</a>
+        <BackButton onClick={handleBack} />
         <button onClick={handleSubmit}>Submit</button>
       </div>
       
