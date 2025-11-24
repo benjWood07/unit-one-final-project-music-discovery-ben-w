@@ -22,6 +22,12 @@ function App() {
   const [selectedSources, setSelectedSources] = useState([]);
   const [selectedTracks, setSelectedTracks] = useState([]);
 
+  const filteredSources = selectedGenres.length > 0
+    ? mockSources.filter(source => 
+        source.genres.some(genre => selectedGenres.includes(genre))
+      )
+    : mockSources;
+
   const filteredTracks = selectedGenres.length > 0 
     ? mockTracks.filter(track => selectedGenres.includes(track.genre))
     : mockTracks;
@@ -62,7 +68,7 @@ function App() {
               path="/select-source" 
               element={
                 <SelectSourcePage 
-                  sources={mockSources}
+                  sources={filteredSources}
                   selectedSources={selectedSources}
                   setSelectedSources={setSelectedSources}
                 />

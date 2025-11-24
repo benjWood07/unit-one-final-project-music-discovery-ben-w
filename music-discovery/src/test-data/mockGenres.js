@@ -2,7 +2,7 @@ const mockGenres = [
   'Rock',
   'Pop',
   'Hip Hop',
-  'Jazz',
+  'Metal',
   'Punk',
   'Electronic',
   'Country',
