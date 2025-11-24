@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import SourceItem from '../items/SourceItem';
 import BackButton from '../common/BackButton';
+import SubmitButton from '../common/SubmitButton';
 import '../styles/SourceList.css';
 
 function SourceList({ sources, selectedSources, setSelectedSources, handleSubmit, handleBack, error }) {
@@ -65,7 +66,7 @@ function SourceList({ sources, selectedSources, setSelectedSources, handleSubmit
       
       <div className="source-list-actions">
         <BackButton onClick={handleBack} />
-        <button onClick={handleSubmit}>Submit</button>
+        <SubmitButton onClick={handleSubmit}>Submit</SubmitButton>
       </div>
       
       {error && <p className="error-message">{error}</p>}
