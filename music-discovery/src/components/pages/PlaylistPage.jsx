@@ -1,6 +1,6 @@
 import React from 'react';
 import Playlist from '../lists/Playlist';
-import MediaPlayer from '../MediaPlayer';
+//import MediaPlayer from '../MediaPlayer';
 import '../styles/PlaylistPage.css';
 
 function PlaylistPage({ playlistName, playlistDescription, selectedTracks }) {
@@ -11,7 +11,7 @@ function PlaylistPage({ playlistName, playlistDescription, selectedTracks }) {
         playlistDescription={playlistDescription}
         selectedTracks={selectedTracks}
       />
-      <MediaPlayer />
+      {/* <MediaPlayer /> */}
     </div>
   );
 }

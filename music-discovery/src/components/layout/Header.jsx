@@ -16,15 +16,15 @@ function Header() {
           <button className="hamburger-menu" onClick={toggleMenu}>
             ☰
           </button>
-          <input type="text" placeholder="Search..." />
+          {/* <input type="text" placeholder="Search..." /> */}
         </div>
-        
+        {/*
         <div className="auth-buttons">
           <button>Sign In</button>
           <button>Sign Up</button>
         </div>
+        */}
       </div>
-
       <div className="header-bottom">
         <h1>SongScout</h1>
         
