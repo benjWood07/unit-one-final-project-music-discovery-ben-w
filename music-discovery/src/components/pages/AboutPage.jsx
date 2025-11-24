@@ -40,7 +40,7 @@ const AboutPage = () => {
         </section>
         </div>
         
-        <button>Contact Us</button>
+        {/* <button>Contact Us</button> */}
       </div>
     </div>
   );
