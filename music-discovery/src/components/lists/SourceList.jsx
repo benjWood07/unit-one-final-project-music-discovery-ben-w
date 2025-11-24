@@ -1,16 +1,18 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import SourceItem from '../items/SourceItem';
 import '../styles/SourceList.css';
 
 function SourceList({ sources, selectedSources, setSelectedSources, handleSubmit, handleBack, error }) {
+    const hasInitialized = useRef(false);
 
   useEffect(() => {
-    if (selectedSources.length === 0 && sources.length > 0) {
+    if (!hasInitialized.current && selectedSources.length === 0 && sources.length > 0) {
       const allSourceIds = sources.map(source => source.id);
       setSelectedSources(allSourceIds);
+      hasInitialized.current = true;
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [sources, setSelectedSources]);
+  }, [sources]);
 
   const toggleSource = (sourceId) => {
     if (selectedSources.includes(sourceId)) {
@@ -33,7 +35,7 @@ function SourceList({ sources, selectedSources, setSelectedSources, handleSubmit
 
   return (
     <div className="source-list">
-      <h3>Music Source</h3>
+      <h3>Track Source</h3>
       <p>Select one or multiple sources</p>
       
       <div className="source-header">

@@ -20,7 +20,7 @@ function Header() {
         </div>
         
         <div className="auth-buttons">
-          <button>Login</button>
+          <button>Sign In</button>
           <button>Sign Up</button>
         </div>
       </div>

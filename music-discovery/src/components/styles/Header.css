@@ -46,6 +46,10 @@ header .auth-buttons button {
   white-space: nowrap;
 }
 
+header .auth-buttons button:hover {
+  background-color: #c2a3619f;
+}
+
 .hamburger-menu {
   display: block;
   background-color: transparent;
