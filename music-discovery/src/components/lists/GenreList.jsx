@@ -1,6 +1,7 @@
 import React from 'react';
 import GenreItem from '../items/GenreItem';
 import BackButton from '../common/BackButton';
+import SubmitButton from '../common/SubmitButton';
 import '../styles/GenreList.css';
 
 function GenreList({ genres, selectedGenres, setSelectedGenres, handleSubmit, handleBack, error }) {
@@ -31,7 +32,7 @@ function GenreList({ genres, selectedGenres, setSelectedGenres, handleSubmit, ha
       
       <div className="genre-list-actions">
         <BackButton onClick={handleBack} />
-        <button onClick={handleSubmit}>Submit</button>
+        <SubmitButton onClick={handleSubmit}>Submit</SubmitButton>
       </div>
       
       {error && <p className="error-message">{error}</p>}

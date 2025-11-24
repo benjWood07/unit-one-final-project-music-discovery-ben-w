@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/TrackList.css';
 import BackButton from '../common/BackButton';
+import SubmitButton from '../common/SubmitButton';
 
 function TrackList({ tracks, selectedTracks, setSelectedTracks, handleSubmit, handleBack, error }) {
   
@@ -71,7 +72,7 @@ function TrackList({ tracks, selectedTracks, setSelectedTracks, handleSubmit, ha
       
       <div className="track-list-actions">
         <BackButton onClick={handleBack} />
-        <button onClick={handleSubmit}>Add Tracks</button>
+        <SubmitButton onClick={handleSubmit}>Submit</SubmitButton>
       </div>
       
       {error && <p className="error-message">{error}</p>}
